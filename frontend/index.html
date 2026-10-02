@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Floor</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div class="header-left">
+          <h1>Trading Floor</h1>
+        </div>
+        <div class="header-right">
+          <div class="market-info">
+            <span id="market-source"></span>
+            <span id="market-status"></span>
+          </div>
+          <button id="btn-theme" class="theme-btn">🌙</button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="sidebar">
+          <h2>Returns</h2>
+          <ul id="returns-list"></ul>
+        </div>
+        <div class="panels-container">
+          <div id="panels"></div>
+        </div>
+      </main>
+
+      <div id="market-badge" style="display: none;"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
